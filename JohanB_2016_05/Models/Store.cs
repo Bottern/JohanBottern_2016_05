@@ -10,11 +10,11 @@ namespace JohanB_2016_05.Models
     {
         [Required]
         public int StoreId { get; set; }
-        [Required, MinLength(3), MaxLength(80)]
+        
         public string Name { get; set; }
-        [Required, MinLength(5), MaxLength(250)]
+        
         public string Address { get; set; }
-        [Required]
-        public Products Products { get; set; }
+        
+        public Products Productses { get; set; }
     }
 }

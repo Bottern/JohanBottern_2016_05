@@ -45,9 +45,9 @@ namespace JohanB_2016_05.Models
                     StoreId = 1,
                     Name = "First Store",
                     Address = "Sodergatan 78 275 45 Helsingborg",
-                    Products = new Products()
+                    Productses = new Products()
                     {
-                        ProductId = 1,
+                        ProductsId = 1,
                         Name = "First Product",
                         ProductNumber = 1,
                         ProductText = "This is the first product of the first store, BUY IT!!!",
@@ -67,12 +67,12 @@ namespace JohanB_2016_05.Models
                     StoreId = 2,
                     Name = "Second Store",
                     Address = "Södergatan 79, 275 45 Helsingborg",
-                    Products = new Products()
+                    Productses = new Products()
                     {
-                        ProductId = 2,
-                        Name = "First Product",
-                        ProductNumber = 1,
-                        ProductText = "This is the first product of the first store, BUY IT!!!",
+                        ProductsId = 2,
+                        Name = "Second Product",
+                        ProductNumber = 5,
+                        ProductText = "This is the second product of the first store, BUY IT!!!",
                         ProductsInStock = 50
                     },
                    //Products = new Products()

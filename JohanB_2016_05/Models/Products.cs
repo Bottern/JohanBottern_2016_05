@@ -5,7 +5,7 @@ namespace JohanB_2016_05.Models
     public class Products
     {
         [Required]
-        public int ProductId { get; set; }
+        public int ProductsId { get; set; }
         [Required, MinLength(3), MaxLength(80)]
         public string Name { get; set; }
         [Required, MinLength(3), MaxLength(580)]
