@@ -8,14 +8,21 @@ namespace JohanB_2016_05.Models
 {
     public class MyAttributes : ValidationAttribute
     {
-        //protected override ValidationResult IsValid(object value, ValidationContext validation)
-        //{
-            //var input = value.ToString().ToLower();
-            //if(input)
+        public override bool IsValid(object value)
+        {
+            var input = value.ToString().ToLower();
+            if (input.Contains("knife"))
+            {
+                return false;
+            }
+            return true;
+        }
 
+        public override string FormatErrorMessage(string name)
+        {
+            return "Bad bad, dont use knife";
+        }
 
-            //    kom ej på hur regex syntaxen såg ut
-            
-    //    }
-    }
+        //kom ej på hur regex syntaxen såg ut
+        }
 }

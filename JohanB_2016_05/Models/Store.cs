@@ -10,7 +10,7 @@ namespace JohanB_2016_05.Models
     {
         [Required]
         public int StoreId { get; set; }
-        
+        [MyAttributes]
         public string Name { get; set; }
         
         public string Address { get; set; }
